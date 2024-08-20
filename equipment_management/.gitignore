@@ -1,0 +1,71 @@
+# Python bytecode
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.pyc
+
+# Django specific
+*.log
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+
+# Environment variables
+.env
+.env.*
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+.virtualenv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Coverage reports
+.coverage
+*.cover
+*.log
+nosetests.xml
+coverage.xml
+*.coverage
+
+# Django-specific cache and history
+*.sqlite3
+*.log
+*.pot
+*.pyc
+__pycache__/
+*.pyc
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Node
+node_modules/
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Caches
+*.cache
+*.tmp
+*.bak
+
+# Jupyter Notebook
+.ipynb_checkpoints/
