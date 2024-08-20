@@ -1,0 +1,15 @@
+<!-- employee_dashboard.html -->
+{% extends 'base.html' %}
+
+{% block title %}Employee Dashboard{% endblock %}
+
+{% block content %}
+<h1>Welcome {{ username }}! Here is your Equipment</h1>
+<ul>
+    {% for item in equipment_list %}
+        <li>{{ item.name }}: {{ item.description }} (Issued on: {{ item.issued_date|date:"F j, Y" }})</li>
+    {% empty %}
+        <li>No equipment assigned.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

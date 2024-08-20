@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <h1>Admin Dashboard</h1>
+    <h2>Employees</h2>
+    <ul>
+        {% for employee in employees %}
+            <li>{{ employee.user.username }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Equipment</h2>
+    <ul>
+        {% for item in equipment_list %}
+            <li>{{ item.name }}: {{ item.description }} - Assigned to: {{ item.assigned_to.user.username if item.assigned_to else 'None' }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
